@@ -43,3 +43,8 @@ http://api-aws-eu-qa-1.auto1-test.com/v1/car-types/manufacturer/wrong-service?wa
     Conclusion: ***POST call for all the three endpoint gives trace which may be a security issue if the exception 
     stacktrace returned from server***
 7. Get call request header changes in case of http and https protocol
+
+
+Genarate allure Report :  
+1. allure serve
+2. allure generate -c ./allure-results
