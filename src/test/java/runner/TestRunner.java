@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
         features = "src/test/features",
         glue = {"stepdefs"},
         tags = {"@success_test,@error"},
-        plugin = {"html:target/cucumber-reports","rerun:target/rerun.txt","html:target/cucumber-reports/cucumber-pretty","json:target/cucumber-reports/CucumberTestReport.json"},
+        plugin = {"html:target/cucumber-reports","rerun:target/rerun.txt","html:target/cucumber-reports/cucumber-pretty","json:target/cucumber-reports/CucumberTestReport.json","com.cucumber.listener.ExtentCucumberFormatter:target/ExtentReport.html"},
         strict = true,dryRun = false)
 public class TestRunner extends AbstractTestNGCucumberTests {
     private cucumber.api.testng.TestNGCucumberRunner testNGCucumberRunner;
